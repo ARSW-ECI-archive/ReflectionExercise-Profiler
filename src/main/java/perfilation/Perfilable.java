@@ -14,7 +14,7 @@ public interface Perfilable{
 	*      donde cada posición corresponde al número de veces que se deben ejectuar los métodos indicados
 	*      en dicha propiedad (la correspondencia número de veces/método la da el índice)
 	*/
-	public int getTestCount();
+	public int[] getTestCount();
 
 
 }

@@ -1,9 +1,9 @@
 package test;
 
 import java.util.Random;
+import java.util.Observable;
 
-
-public class ClaseAProbar {
+public class ClaseAProbar extends Observable{
 
 	
 	public void metodoUno(){
@@ -21,7 +21,6 @@ public class ClaseAProbar {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}				
-		
 	}
 
 	public void metodoTres(){
