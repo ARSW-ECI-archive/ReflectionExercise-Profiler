@@ -1,5 +1,6 @@
 **Escuela Colombiana de Ingeniería**
-**Arquitecturas de Software - ARSW*****Taller – Reflexividad de los lenguajes.******Ejercicio individual o en parejas.***_NOTA 1: debe abrir una cuenta en GitLab o en BitBucket, crear un repositorio privado, compartirlo con su compañero (si lo tiene) y en el mismo ir llevando el avance del laboratorio. NO USE GITHUB, ya que dejaría sus avances públicos._
+**Arquitecturas de Software - ARSW*****Taller – Reflexividad de los lenguajes.******Ejercicio individual o en parejas.***
+_NOTA 1: debe abrir una cuenta en GitLab o en BitBucket, crear un repositorio privado, compartirlo con su compañero (si lo tiene) y en el mismo ir llevando el avance del laboratorio. NO USE GITHUB, ya que dejaría sus avances públicos._
 
 _NOTA 2: el uso de GIT NO ES OPCIONAL, el proyecto entregado debe mostrar evidencia de su uso con los históricos de los commits._
 En este ejercicio va a desarrollar una herramienta que apoye el proceso de detección de cuellos de botella en aplicaciones (un tipo de ‘perfilamiento’). La herramienta, haciendo uso de las caractarísticas de reflexividad de Java, recibe como insumo el nombre de la clase que se quiere analizar, la instancia, y mide el tiempo de ejecución de sus métodos. Este podría verse como un ejemplo de 'metaprogramación', pues esta es una herramienta que usa como insumo otros programas.
