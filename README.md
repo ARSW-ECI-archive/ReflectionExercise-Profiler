@@ -24,7 +24,8 @@ Clone el proyecto con GIT (no lo descargue directamente!) y ábralo con NetBeans
 ```	/**	* @obj retornar los nombres de los métodos que se pueden perfilar en esta aplicación	* @return Un arreglo, sin elementos nulos, con los nombres de los métodos que se deben probar	*/	public String[] getTesteableMethodNames();	/**	* @obj retornar un arreglo con el mismo número de elementos de la propiedad 'testeableMethods',	*      donde cada posición corresponde al número de veces que se deben ejectuar los métodos indicados	*      en dicha propiedad (la correspondencia número de veces/método la da el índice)	*/	public int[] getTestCount();``` 
 1.	Haga un programa que funcione por línea de comando, y que reciba como parámetro el nombre de la clase que se va a probar. Por ejemplo, para perfilar una clase  (que implemente la interfaz indicada), la herramienta se debe poder invocar como:```~shell>  mvn exec:java -Dexec.mainClass="edu.eci.pdsw.view.Perfilator"   -Dexec.args="paquete1.paquete2.ClaseAProbar"
 ```
-Para hacer esto, utilice el API de Reflection de manera que se pueda:
+
+Para hacer esto, utilice el  [API Reflection de Java](https://docs.oracle.com/javase/tutorial/reflect/class/index.html). de manera que se pueda:
 1.	Verificar que la clase dada como parámetro implementa la interfaz indicada. En caso de que no, mostrar un mensaje de error.
 2.	En caso de que sí implemente la interfaz, crear una instancia de la clase, e invocar los métodos implementados de dicha interfaz para identificar qué métodos se quieren probar de la clase.
 3.	Ejecutar en la instancia antes creda los métodos indicados por 'getTesteableMethodNames', el número de veces indicado, midiendo el tiempo total que toma su ejecución.
